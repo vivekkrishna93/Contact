@@ -1,0 +1,78 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/lg"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+
+    android:weightSum="1">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/Uname"
+
+        android:alpha="0.75"
+        android:layout_gravity="center_horizontal"
+        android:layout_above="@+id/Pass"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:singleLine="true"
+        android:layout_marginBottom="0dp"
+        android:hint="User name" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/Pass"
+        android:alpha="0.75"
+
+        android:layout_marginBottom="89dp"
+        android:hint="password"
+        android:layout_above="@+id/Login"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="login"
+        android:id="@+id/Login"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/xml2"
+        android:onClick="showme"
+        android:layout_marginRight="44dp"
+        android:alpha="0.50"
+        android:layout_marginEnd="44dp"
+        android:layout_alignTop="@+id/Lsignup"
+        android:layout_toLeftOf="@+id/Lsignup"
+        android:layout_toStartOf="@+id/Lsignup" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="signup"
+        android:id="@+id/Lsignup"
+        android:layout_gravity="center_horizontal"
+        android:onClick="showme"
+        android:background="@drawable/xml2"
+        android:layout_marginRight="70dp"
+        android:alpha="0.50"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="109dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/Pass"
+        android:layout_alignEnd="@+id/Pass" />
+
+
+
+</RelativeLayout>
